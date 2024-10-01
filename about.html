@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About LeadsGrow - Your Partner in Business Growth</title>
+    <meta name="description" content="Learn about LeadsGrow, our mission, and our commitment to empowering businesses with innovative solutions and expert services.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/laptop-screen.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .service-card {
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+    
+        .special-offer {
+            background-color: #b5cf21;
+            color: #000;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            max-width: 400px;
+            width: 90%;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+    
+        .navbar {
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .navbar-brand {
+            font-weight: bold;
+            color: #0056b3;
+            display: flex;
+            align-items: center;
+        }
+    
+        .navbar-brand img {
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+    
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+    
+        .nav-item {
+            position: relative;
+            margin: 0 5px;
+        }
+    
+        .nav-link {
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+    
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #0056b3;
+            transition: all 0.3s ease;
+        }
+    
+        .nav-link:hover {
+            color: #0056b3;
+        }
+    
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+    
+        .nav-link.active {
+            color: #0056b3;
+        }
+    
+        .nav-link.active::after {
+            width: 100%;
+            left: 0;
+        }
+    
+        @media (max-width: 991px) {
+            .nav-link::after {
+                display: none;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="LeadsGrow Logo">
+                LeadsGrow
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-2 mb-4">About LeadsGrow</h1>
+            <p class="lead">Your Partner in Business Growth and Innovation</p>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="mb-4">Revolutionizing Business Growth Since 2022</h2>
+                <p>LeadsGrow burst onto the scene in 2022 with a bold vision: to empower businesses of all sizes with cutting-edge solutions that drive unprecedented growth. We didn't just enter the market; we transformed it, recognizing the unique challenges of the digital age and crafting a suite of services that turns those challenges into opportunities.</p>
+                <p>Since day one, we've been on a relentless mission to stay ahead of the curve. Our team of digital alchemists doesn't just keep up with technological advancements – we predict them, shape them, and harness their power to catapult our clients to the forefront of their industries.</p>
+            </section>
+    
+            <section class="mb-5">
+                <h2 class="mb-4">Our Unyielding Mission</h2>
+                <p>At LeadsGrow, we're not content with just driving business growth – we're here to ignite a revolution in how companies achieve success. Our commitment is unwavering:</p>
+                <ul>
+                    <li>Deliver bespoke, high-impact solutions that don't just meet expectations – they shatter them</li>
+                    <li>Relentlessly pursue innovation, turning emerging trends into your competitive advantage</li>
+                    <li>Forge unbreakable partnerships built on a foundation of trust, transparency, and shared triumphs</li>
+                    <li>Continuously evolve our arsenal of skills and technologies, ensuring you're always steps ahead of the competition</li>
+                </ul>
+            </section>
+    
+            <section class="mb-5">
+                <h2 class="mb-4">The Values That Drive Us</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-lightbulb text-primary me-2"></i>Fearless Innovation</h5>
+                                <p class="card-text">We don't just think outside the box – we redefine it. Our innovative spirit propels us to discover groundbreaking solutions that revolutionize your business landscape.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-handshake text-primary me-2"></i>Unwavering Integrity</h5>
+                                <p class="card-text">Trust is our cornerstone. We uphold the highest ethical standards, ensuring every interaction and solution we provide is rooted in honesty and transparency.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-chart-line text-primary me-2"></i>Relentless Excellence</h5>
+                                <p class="card-text">Good is never good enough. We pursue excellence with an unquenchable thirst, consistently surpassing expectations and delivering results that speak volumes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="mb-5">
+                <h2 class="mb-4">Why LeadsGrow is Your Catalyst for Success</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h5><i class="fas fa-user-tie text-primary me-2"></i>Unrivaled Expertise</h5>
+                        <p>Our team isn't just skilled – they're virtuosos in their fields. With diverse expertise spanning data science, marketing, and business operations, we bring a powerhouse of knowledge to fuel your growth.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h5><i class="fas fa-cogs text-primary me-2"></i>Precision-Engineered Solutions</h5>
+                        <p>Cookie-cutter approaches? Not here. We meticulously craft each solution to align perfectly with your unique needs and ambitious goals, ensuring maximum impact and jaw-dropping ROI.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h5><i class="fas fa-shield-alt text-primary me-2"></i>Fort Knox-Level Security</h5>
+                        <p>Your data isn't just safe – it's impenetrable. We implement cutting-edge security measures that would make hackers weep, ensuring your sensitive information remains untouchable.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h5><i class="fas fa-comments text-primary me-2"></i>Support That Goes Above and Beyond</h5>
+                        <p>Our support team doesn't just assist – they elevate. Available round-the-clock, they're committed to turning every interaction into an opportunity for your success.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <h2 class="mb-4">Meet the Visionaries Behind LeadsGrow</h2>
+                <p>Behind every groundbreaking solution is a team of extraordinary individuals. Our diverse group of experts brings together years of industry experience, innovative thinking, and a passion for driving business success. Stay tuned as we unveil the faces and stories of the brilliant minds shaping the future of LeadsGrow and, by extension, your business growth.</p>
+                <!-- Team member profiles will be added here in the future -->
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>LeadsGrow</h5>
+                    <p>Empowering businesses with innovative solutions and expert services.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="mailto:info@leadgrow.tech">info@leadgrow.tech</a></p>
+                    <div class="mt-3">
+                        <a href="https://wa.me/917415410434" class="text-light me-3"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://in.linkedin.com/company/leadsgrow-tech" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 LeadsGrow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Get the current page filename
+    var currentPage = window.location.pathname.split("/").pop();
+
+    // Get all navigation links
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Loop through the links and add the active class to the current page
+    navLinks.forEach(function(link) {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});
+    </script>
+</body>
+</html>
